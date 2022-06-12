@@ -10,7 +10,10 @@ import numpy as np
 from joblib import load
 import matplotlib.image as mpimg  
 import streamlit as st
-
+st.set_page_config(
+        page_title="Water Test",
+        layout="wide",
+    )
 rr = load('model.joblib')
 st.write("""
 # URBAN WATER QUALITY PREDICTION
